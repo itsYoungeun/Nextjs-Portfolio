@@ -1,7 +1,8 @@
-import Image from "next/image";
+import Image from "next/image"
 import bg from "../../public/background/home-background.png"
-import RenderModel from "@/components/RenderModel";
-import Sprite from "@/components/models/Sprite";
+import RenderModel from "@/components/RenderModel"
+import Sprite from "@/components/models/Sprite"
+import Navigation from "@/components/navigation"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
     
     <div className="w-full h-screen">
       {/* navigation and 3d model */}
+      <Navigation />
       <RenderModel>
         <Sprite />
       </RenderModel>

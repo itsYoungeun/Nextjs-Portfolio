@@ -8,16 +8,24 @@ Title: Hollow Knight
 "use client"
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from "@react-three/fiber"
 
 export default function Sprite(props) {
   const { nodes, materials } = useGLTF('/models/scene-transformed.glb');
+
+  const modelRef = useRef()
+
+  useFrame((state, delta, xrFrame) => {
+    console.log(state.clock)
+    modelRef.current.position.y = -0.85 + Math.sin(state.clock.elapsedTime) * 0.15
+  })
+
   return (
-    <group 
-      {...props} 
+    <group {...props} dispose={null}
+      ref={modelRef}
       position={[0, -0.85, 0]}
       scale={[3, 3, 3]}
       rotation={[0.05, -0.85, 0]}
-      dispose={null}
     >
       <mesh
         castShadow
