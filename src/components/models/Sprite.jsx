@@ -12,10 +12,13 @@ import { useGLTF } from '@react-three/drei'
 export default function Sprite(props) {
   const { nodes, materials } = useGLTF('/models/scene-transformed.glb');
   return (
-    <group {...props} dispose={null}>
-      position={[0,-1,5,0]}
-      scale={[0.06,0.06,0.06]}
-      rotation={[0.25, 0, 0]}
+    <group 
+      {...props} 
+      position={[0, -0.85, 0]}
+      scale={[3, 3, 3]}
+      rotation={[0.05, -0.85, 0]}
+      dispose={null}
+    >
       <mesh
         castShadow
         receiveShadow

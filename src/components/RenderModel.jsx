@@ -1,5 +1,6 @@
 "use client"
 import { Canvas } from '@react-three/fiber'
+import { Environment } from '@react-three/drei'
 import clsx from 'clsx'
 import React, { Suspense } from 'react'
 
@@ -12,7 +13,7 @@ const RenderModel = ({children, className}) => {
         <Suspense fallback={null}>
             {children}
         </Suspense>
-        <Environment preset='dawn'/>
+        <Environment preset="dawn"/>
     </Canvas>
   )
 }
