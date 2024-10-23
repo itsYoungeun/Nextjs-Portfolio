@@ -16,7 +16,6 @@ export default function Home() {
         <Glasses />
       </RenderModel>
     </div>
-
     </main>
   );
 }
