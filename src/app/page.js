@@ -1,7 +1,7 @@
 import Image from "next/image"
-import bg from "../../public/background/home-background.png"
+import bg from "../../public/background/home-background.jpeg"
 import RenderModel from "@/components/RenderModel"
-import Sprite from "@/components/models/Sprite"
+import Glasses from "@/components/models/Glasses"
 import Navigation from "@/components/navigation"
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       {/* navigation and 3d model */}
       <Navigation />
       <RenderModel>
-        <Sprite />
+        <Glasses />
       </RenderModel>
     </div>
 

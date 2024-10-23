@@ -4,14 +4,14 @@ Author: Dasha Klyusova (https://sketchfab.com/AnoFail)
 License: CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 Source: https://sketchfab.com/3d-models/hollow-knight-5a76d93e39984f829abd6f406562265b
 Title: Hollow Knight
-*/
+
 "use client"
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from "@react-three/fiber"
 
 export default function Sprite(props) {
-  const { nodes, materials } = useGLTF('/models/scene-transformed.glb');
+  const { nodes, materials } = useGLTF('/models/sprite-transformed.glb');
 
   const modelRef = useRef()
 
@@ -47,4 +47,5 @@ export default function Sprite(props) {
   )
 }
 
-useGLTF.preload('/models/scene-transformed.glb')
+useGLTF.preload('/models/sprite-transformed.glb')
+*/

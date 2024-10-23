@@ -17,7 +17,7 @@ module.exports = {
         accent: 'rgb(var(--accent))',
       },
       backgroundImage:{
-        'firefly-radial': 'radial-gradient(50% 50% at 50% 50%. rgba(253, 255, 80, 0.5) 0%, rgba(217, 217, 217, 0), 100%)'
+        'firefly-radial': 'radial-gradient(50% 50% at 50% 50%, rgba(253, 255, 80, 0.5) 0%, rgba(217, 217, 217, 0) 100%)'
       },
       boxShadow:{
         'glass-inset': 'inset 0 17px 5px -9px rgbm(254, 254, 91, 0.05)',
@@ -27,11 +27,20 @@ module.exports = {
         'spin-reverse':{
           '0%': {transform: 'rotate(0deg)'},
           '100%': {transform: 'rotate(-360deg)'}
-        }
+        },
+        'fadeInOut': {
+          '0%, 100%': { opacity: '0' },
+          '50%': { opacity: '1' }
+        },
+        'flash': {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0 },
+        },
       },
       animation:{
-        'spin-slow': 'spin 40s linear infinite',
-        'spin-slow-reverse': 'spin-reverse 40s linear infinite'
+        'spin-slow': 'spin 60s linear infinite',
+        'spin-slow-reverse': 'spin-reverse 60s linear infinite',
+        'flash-light': 'flash 3s ease-in-out infinite',
       }
     },
   },
