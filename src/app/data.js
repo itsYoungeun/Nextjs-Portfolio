@@ -96,13 +96,13 @@ export const BtnList = [
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
     label: "Github",
-    link: "https://www.github.com/JYoungeun",
+    link: "https://www.github.com/itsYoungeun",
     icon: "github",
     newTab: true,
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/youngpc",
+    link: "https://www.linkedin.com/in/itsYoungeun",
     icon: "linkedin",
     newTab: true,
   },
