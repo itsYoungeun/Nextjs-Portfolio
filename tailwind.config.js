@@ -41,6 +41,9 @@ module.exports = {
         'spin-slow': 'spin 60s linear infinite',
         'spin-slow-reverse': 'spin-reverse 60s linear infinite',
         'flash-light': 'flash 3s ease-in-out infinite',
+      },
+      screens:{
+        xs: '480px'
       }
     },
   },

@@ -20,6 +20,9 @@
     @apply bg-background/20 border border-accent/30 border-solid backdrop-blur-[2px] shadow-glass-inset 
     hover:shadow-glass-sm;
   }
+  .rotate-up {
+    transform: rotate(-0.75deg); /* Adjust the angle as needed */
+  }
 }
 
 @keyframes move{
