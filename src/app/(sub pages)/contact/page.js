@@ -23,7 +23,7 @@ export default function Contact() {
           </h1>
           <p className="text-center font-light text-sm xs:text-base">
           Ready to turn your ideas into reality? Whether you need a portfolio, website, or even an app, 
-          I am confident we can bring it to life. Reach out to me down below, and let's create something 
+          I am confident we can bring it to life. Reach out to me down below, and let&apos;s create something 
           great together.
           </p>
         </div>
