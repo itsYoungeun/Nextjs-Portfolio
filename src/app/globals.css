@@ -21,7 +21,7 @@
     hover:shadow-glass-sm;
   }
   .rotate-up {
-    transform: rotate(-0.75deg); /* Adjust the angle as needed */
+    transform: rotate(-1.25deg); /* Adjust the angle as needed */
   }
 }
 
