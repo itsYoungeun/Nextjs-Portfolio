@@ -30,9 +30,9 @@ const item = {
     show: { scale: 1 },
   };
   
-  const NavLink = motion(Link);
+const NavLink = motion(Link);
   
-  const NavButton = ({
+const NavButton = ({
     x,
     y,
     label,
@@ -40,7 +40,7 @@ const item = {
     icon,
     newTab,
     labelDirection = "right", // default to "right"
-  }) => {
+    }) => {
     return (
       <ResponsiveComponent>
         {({ size }) => {
@@ -103,4 +103,4 @@ const item = {
     );
   };
   
-  export default NavButton;
+export default NavButton;

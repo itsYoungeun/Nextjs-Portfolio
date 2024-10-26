@@ -3,6 +3,23 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser'
 import { Toaster, toast } from 'sonner'
+import { motion } from 'framer-motion';
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { scale: 0 },
+  show: { scale: 1 },
+};
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -54,11 +71,15 @@ export default function Form() {
   return (
     <>
     <Toaster richColors={true} />
-    <form 
+    <motion.form 
+    variants={container}
+    initial="hidden"
+    animate="show"
     onSubmit={handleSubmit(onSubmit)}
     className='max-w-md w-full flex flex-col items-center justify-center space-y-4'>
 
-      <input 
+      <motion.input 
+      variants={item}
       type="text" 
       placeholder="name" 
       {...register("name", {required: 'This field is required!',
@@ -73,7 +94,8 @@ export default function Form() {
       {
         errors.name && <span className='inline-block self-start text-accent'>{errors.name.message}</span>
       }
-      <input 
+      <motion.input 
+      variants={item}
       type="email" 
       placeholder="email" 
       {...register("email", {required: 'This field is required!'})} 
@@ -83,7 +105,8 @@ export default function Form() {
       {
         errors.email && <span className='inline-block self-start text-accent'>{errors.email.message}</span>
       }
-      <textarea 
+      <motion.textarea 
+      variants={item}
       placeholder='message' 
       {...register("message", {required: 'This field is required!', maxLength: {
         value: 500,
@@ -98,13 +121,14 @@ export default function Form() {
       {
         errors.message && <span className='inline-block self-start text-accent'>{errors.message.message}</span>
       }
-      <input 
+      <motion.input 
+      variants={item}
       value='Send'
       className='px-10 py-4 rounded-md shadow-lg border border-accent/30 border-solid
       hover:shadow-glass-sm backdrop-blur-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50
       cursor-pointer capitalize hover:border-accent' 
       type="submit" />
-    </form>
+    </motion.form>
     </>
   );
 }
