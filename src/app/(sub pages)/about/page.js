@@ -4,10 +4,22 @@ import AboutDetails from "@/components/about"
 import ProjectList from "@/components/projects"
 import { projectsData } from "../../data"
 
+/*
+import dynamic from "next/dynamic"
+
+const HatModel = dynamic(() => import("@/components/models/HatModel"), {
+  ssr: false,
+})
+*/
+
 export default function Home() {
   return (
     <>
-      <Image src={bg} alt="background-image" className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-25"/>
+      <Image 
+      src={bg} 
+      priority sizes="100vw"
+      alt="background-image" 
+      className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-25"/>
 
       <div className='relative w-full h-screen flex flex-col items-center justify-center'>
       <div className='absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-48 -translate-x-1/2'>
