@@ -1,26 +1,26 @@
 "use client"
-import { motion } from 'framer-motion'
-import { Volume2, VolumeX } from 'lucide-react'
-import React, { useEffect, useRef, useState } from 'react'
-import { createPortal } from 'react-dom'
+import { motion } from "framer-motion"
+import { Volume2, VolumeX } from "lucide-react"
+import React, { useEffect, useRef, useState } from "react"
+import { createPortal } from "react-dom"
 
 const Modal = ({ onClose, toggle }) => {
     return createPortal(
-        <div className='fixed inset-0 bg-background/60 backdrop-blur-sm flex items-center justify-center'>
-            <div className='bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px]
+        <div className="fixed inset-0 bg-background/60 backdrop-blur-sm flex items-center justify-center">
+            <div className="bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px]
             py-8 px-6 xs:px-10 sm:px-16 rounded shadow-glass-inset text-center space-y-8
-            '>
-                <p className='font-light'>Play the background music?</p>
-                <div className='flex items-center justify-center space-x-4'>
-                    <button onClick={toggle} className='px-4 py-2 border border-accent/30 border-solid hover:shadow-glass-sm rounded 
-                    mr-2'>Yes</button>
-                    <button onClick={onClose} className='px-4 py-2 border border-accent/30 border-solid hover:shadow-glass-sm rounded 
-                    mr-2'>No</button>
+            ">
+                <p className="font-light">Play the background music?</p>
+                <div className="flex items-center justify-center space-x-4">
+                    <button onClick={toggle} className="px-4 py-2 border border-accent/30 border-solid hover:shadow-glass-sm rounded 
+                    mr-2">Yes</button>
+                    <button onClick={onClose} className="px-4 py-2 border border-accent/30 border-solid hover:shadow-glass-sm rounded 
+                    mr-2">No</button>
                 </div>    
             </div>    
         </div>,
         document.getElementById("my-modal")
-    )
+    );
 };
 
 const Sound = () => {
@@ -68,13 +68,13 @@ const toggle = () => {
     setShowModal(false);
 }
   return (
-    <div className='fixed top-4 right-2.5 xs:right-4 x-50 group'>
+    <div className="fixed top-4 right-2.5 xs:right-4 x-50 group">
         {showModal && (
             <Modal onClose={() => setShowModal(false)} toggle={toggle} />
         )}
         <audio ref={audioRef} loop>
             <source src={"/audio/lofi-song-backyard-by-lofium-242713.mp3"} type="audio/mpeg" />
-            your browser does not support the audio element.
+            Your browser does not support the audio element.
         </audio>
         <motion.button
         onClick={toggle}
@@ -90,11 +90,11 @@ const toggle = () => {
     >
         {isPlaying ? (
             <Volume2 
-            className='w-full h-full text-fogreground group:hover:text-accent' 
+            className="w-full h-full text-fogreground group:hover:text-accent" 
             strokeWidth={1.5} />
         ) : (
             <VolumeX 
-            className='w-full h-full text-fogreground group:hover:text-accent' 
+            className="w-full h-full text-fogreground group:hover:text-accent" 
             strokeWidth={1.5} />
         )}
     </motion.button>
