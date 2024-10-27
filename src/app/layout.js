@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
         {children}
         <LightsBackground />
         <Sound />
-        <div id="my-modal" />
       </body>
     </html>
   );
