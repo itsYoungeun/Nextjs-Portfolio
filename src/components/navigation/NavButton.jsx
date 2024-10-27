@@ -39,7 +39,6 @@ const NavButton = ({
     link,
     icon,
     newTab,
-    labelDirection = "right", // default to "right"
     }) => {
     return (
       <ResponsiveComponent>
@@ -88,10 +87,10 @@ const NavButton = ({
   
                   <span className="peer bg-transparent absolute top-0 left-0 w-full h-full" />
   
-                  <span
-                    className={clsx("absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-foreground text-sm rounded-md shadow-lg whitespace-nowrap",
-                      labelDirection === "left" ? "right-full left-auto" : "")}
-                  >
+                  <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 
+                    -translate-y-1/2 bg-background text-foreground text-sm rounded-md shadow-lg 
+                    whitespace-nowrap group-hover:opacity-0"
+                    >
                     {label}
                   </span>
                 </span>
