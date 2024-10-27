@@ -3,14 +3,6 @@ import bg from "../../../../public/background/projects-background.jpeg"
 import ProjectList from "@/components/projects"
 import { projectsData } from "../../data"
 
-/*
-import dynamic from "next/dynamic"
-
-const Staff = dynamic(() => import("@/components/models/Staff"), {
-  ssr: false,
-})
-*/
-
 export default function Home() {
   return (
     <>

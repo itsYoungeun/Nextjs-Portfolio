@@ -4,14 +4,6 @@ import AboutDetails from "@/components/about"
 import ProjectList from "@/components/projects"
 import { projectsData } from "../../data"
 
-/*
-import dynamic from "next/dynamic"
-
-const HatModel = dynamic(() => import("@/components/models/HatModel"), {
-  ssr: false,
-})
-*/
-
 export default function Home() {
   return (
     <>
