@@ -5,7 +5,7 @@ import RenderModel from "@/components/RenderModel"
 import Navigation from "@/components/navigation"
 import dynamic from "next/dynamic"
 
-const Glasses = dynamic(() => import("@/components/models/Glasses"), {
+const Glasses = dynamic(() => import("./@/components/models/Glasses"), {
   ssr: false,
 });
 
