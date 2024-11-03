@@ -41,7 +41,7 @@ const AboutDetails = () => {
             </ItemLayout>
 
             <ItemLayout className={'col-span-full hover:border-accent'}>
-                <img className='w-full h-auto' src="https://skillicons.dev/icons?i=aws,bootstrap,codepen,cs,css,discord,figma,git,github,html,java,jquery,js,matlab,nextjs,nodejs,npm,powershell,py,pycharm,react,redux,regex,sass,stackoverflow,tailwind,threejs,unity,windows,vscode" alt="Youngeun" loading="lazy" />
+                <img className='w-full h-auto' src="https://skillicons.dev/icons?i=aws,bootstrap,codepen,cs,css,discord,express,figma,git,github,html,java,jquery,js,matlab,mongodb,nextjs,nodejs,npm,powershell,py,pycharm,react,redux,regex,sass,stackoverflow,tailwind,threejs,unity,windows,vite,vscode" alt="Youngeun" loading="lazy" />
             </ItemLayout>
 
             <ItemLayout className={'col-span-full md:col-span-6 !p-0 hover:border-accent'}>
