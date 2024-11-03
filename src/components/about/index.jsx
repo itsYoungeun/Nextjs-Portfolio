@@ -7,7 +7,7 @@ const AboutDetails = () => {
         <div className='grid grid-cols-12 gap-4 xd:gap-6 md:gap-8 w-full'>
             <ItemLayout className={'col-span-full lg:col-span-8 row-span-2 flex-col items-start hover:border-accent'}>
             <h2 className='text-ml md:text-2xl text-left w-full capitalize'>
-                Software Engineer
+                Software Developer
             </h2>
             <p className='font-light text-xs sm:text-sm md:text-base'>
                 My journey into web development began when I decided I wanted to do something 
