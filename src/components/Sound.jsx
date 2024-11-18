@@ -123,7 +123,7 @@ const toggle = () => {
   return (
     <div className="fixed top-4 right-2.5 xs:right-4 z-50 group">
         <audio ref={audioRef} loop>
-            <source src={"/audio/lofi-song-backyard-by-lofium-242713.mp3"} type="audio/mpeg" />
+            <source src={"/audio/arjunax27s-escape-262894.mp3"} type="audio/mpeg" />
             Your browser does not support the audio element.
         </audio>
         <motion.button
