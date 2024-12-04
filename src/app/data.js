@@ -20,7 +20,7 @@ export const projectsData = [
   {
     id: 1,
     name: "E-Commerce Store",
-    description: "Full stack web application of a store",
+    description: "Full stack store application",
     date: "2024-12-03",
     de2oLink: "https://e-commerce-store-gmqi.onrender.com/",
   },
