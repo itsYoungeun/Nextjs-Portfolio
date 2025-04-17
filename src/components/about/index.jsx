@@ -49,7 +49,7 @@ const AboutDetails = () => {
             </ItemLayout>
 
             <ItemLayout className={'col-span-full md:col-span-6 !p-0 hover:border-accent'}>
-                <img className='w-full h-auto' src="https://github-readme-stats.vercel.app/api/pin/?username=itsYoungeun&repo=QA-Wolf&theme=transparent&hide_border=true&title_color=ffffff&text_color=ffffff&text_bold=false&description_lines_count=2" alt="Youngeun" loading="lazy" />
+                <img className='w-full h-auto' src="https://github-readme-stats.vercel.app/api/pin/?username=itsYoungeun&repo=Verify-Influencers&theme=transparent&hide_border=true&title_color=ffffff&text_color=ffffff&text_bold=false&description_lines_count=2" alt="Youngeun" loading="lazy" />
             </ItemLayout>
         </div>
     </section>
